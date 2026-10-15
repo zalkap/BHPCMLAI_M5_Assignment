@@ -7,6 +7,24 @@ The survey tracks diverse driving attributes (e.g., destination, current time, w
 
 ---
 
+## About the repository
+
+* **Repository location**: https://github.com/zalkap/BHPCMLAI_M5_Assignment
+
+To run this repository locally, execute the following configuration steps:
+```bash
+# Clone the repository
+git clone https://github.com/zalkap/BHPCMLAI_M5_Assignment.git
+cd BHPCMLAI_M5_Assignment
+
+# Install required dependencies
+pip install pandas numpy matplotlib seaborn jupyter
+
+# Initialize the Jupyter server
+jupyter notebook
+```
+
+---
 
 ## Dataset & Data Cleansing Summary
 The dataset (`coupons.csv`) consists of **12,684 records** across **26 feature columns**.
@@ -45,3 +63,4 @@ Based on the statistical indicators aggregated above, optimizing distribution an
 
 ---
 
+##
