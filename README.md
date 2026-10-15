@@ -8,7 +8,7 @@ The survey tracks diverse driving attributes (e.g., destination, current time, w
 
 ## About the repository
 
-* **Repository location**: https://github.com/zalkap/BHPCMLAI_M5_Assignment
+**Repository location**: https://github.com/zalkap/BHPCMLAI_M5_Assignment
 
 To run this repository locally, execute the following configuration steps:
 ```bash
