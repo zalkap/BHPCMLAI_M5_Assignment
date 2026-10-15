@@ -5,7 +5,6 @@ This repository contains a comprehensive Exploratory Data Analysis (EDA) investi
 
 The survey tracks diverse driving attributes (e.g., destination, current time, weather, passenger types), driver demographics (e.g., age, occupation, gender, income), and specific behavioral patterns (frequency of visits to bars, coffee houses, and restaurants). Coupon types span across five distinct categories: less expensive restaurants (under \$20), coffee houses, carry out & take away, bars, and more expensive restaurants (\$20 - \$50).
 
----
 
 ## About the repository
 
@@ -24,7 +23,6 @@ pip install pandas numpy matplotlib seaborn jupyter
 jupyter notebook
 ```
 
----
 
 ## Dataset & Data Cleansing Summary
 The dataset (`coupons.csv`) consists of **12,684 records** across **26 feature columns**.
@@ -33,7 +31,6 @@ The dataset (`coupons.csv`) consists of **12,684 records** across **26 feature c
   * **The `car` attribute** contained 12,576 null observations (accounting for ~99% of total entries). These missing values were programmatically imputed with the label `"data not provided"` to preserve structure without impacting subsequent analytical phases.
   * **Frequency-based features** (`Bar`, `CoffeeHouse`, `CarryAway`, `RestaurantLessThan20`, `Restaurant20To50`) exhibited missing entries accounting for roughly **6.26%** of total data rows. To ensure objective modeling and baseline purity, all row-level records containing these null values were entirely discarded.
 
----
 
 ## Summary of Findings
 
@@ -52,7 +49,6 @@ Coffee house coupons recorded a dead-even overall baseline acceptance rate of **
 * **Temporal Patterns:** Time of day remains a primary determinant. Drivers are significantly more inclined to accept coffee offers during the **morning peak (10 AM)** compared to late-afternoon or late-evening intervals.
 * **Climate & Direction Dynamics:** Environmental conditions display a distinct trend, showing increased coupon acceptance when the weather is **sunny but cold/chilly** outside. Conversely, geographical layout showed neutral significance; whether the venue was located in the **same direction** or the **opposite direction** of travel yielded no noticeable statistical change.
 
----
 
 ## Targeted Customer Hypotheses
 
@@ -61,6 +57,4 @@ Based on the statistical indicators aggregated above, optimizing distribution an
 * **Bar Coupon Strategy:** Target active adult bar-goers who drink at least once a month, driving alone or exclusively with adult peers (ensuring no children are present). Income limits or generic cost-conscious restaurant traits should be excluded from filters.
 * **Coffee House Coupon Strategy:** Target the morning commute window (ideally around 10 AM), heavily favoring young or middle-aged male outliers, especially under chilly yet clear, sunny conditions.
 
----
 
-##
